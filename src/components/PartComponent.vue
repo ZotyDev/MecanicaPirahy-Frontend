@@ -38,7 +38,7 @@ async function deletePart(id: Number) {
   if (confirm("Você tem certeza de que deseja deletar essa peça?")) {
     try {
       var settings = {
-        "url": `http://localhost:8000/delete/${id}`,
+        "url": `https://api.mecanicapirahy.com/delete/${id}`,
         "method": "POST",
         "timeout": 500,
         "headers": {

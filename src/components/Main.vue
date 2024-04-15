@@ -24,7 +24,7 @@ function search(event: MouseEvent) {
   if (searchData.search.length > 0) {
     try {
       var settings = {
-        "url": `http://localhost:8000/paged/500/0/${searchData.search}`,
+        "url": `https://api.mecanicapirahy.com/paged/500/0/${searchData.search}`,
         "method": "GET",
         "timeout": 500,
         "headers": {
@@ -48,7 +48,7 @@ function search(event: MouseEvent) {
   } else {
     try {
       var settings = {
-        "url": `http://localhost:8000/paged/500/0`,
+        "url": `https://api.mecanicapirahy.com/paged/500/0`,
         "method": "GET",
         "timeout": 500,
         "headers": {

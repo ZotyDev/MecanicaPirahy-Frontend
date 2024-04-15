@@ -63,7 +63,7 @@ async function addPart() {
     try {
       var settings = {
         // @ts-ignore
-        "url": `http://localhost:8000/register/${addData.code}/${addData.name}/${converterParaCentavos(addData.price)}/image`,
+        "url": `https://api.mecanicapirahy.com/register/${addData.code}/${addData.name}/${converterParaCentavos(addData.price)}/image`,
         "method": "POST",
         "timeout": 0,
         "headers": {
