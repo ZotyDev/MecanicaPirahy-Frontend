@@ -1,0 +1,25 @@
+@mixin navbar-title()
+  font-family: 'Inter'
+  font-weight: 900
+  letter-spacing: 0.1em
+  font-size: 32px
+
+  @media only screen and (max-width: $mobile-width)
+    font-size: 26px
+
+@mixin text-input()
+  font-family: 'Inter'
+  font-weight: 600
+  font-size: 16px
+  color: $color-text-bright
+
+@mixin text-button()
+  font-family: 'Inter'
+  font-weight: 900
+  font-size: 20px
+  color: white
+  text-align: center
+  text-decoration: none
+
+  &:disabled
+    color: $color-text-bright
